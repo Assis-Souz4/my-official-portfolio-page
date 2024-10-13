@@ -4,7 +4,7 @@ html {
 #header {
   background-color: var(--color-header-background);
   min-height: 100vh;
-  width: calc(100vw / 5);
+  width: calc(100vw / 4);
   padding: 50px 0 0 0;
 }
 .header__image{
