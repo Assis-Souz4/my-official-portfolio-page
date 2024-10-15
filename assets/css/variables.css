@@ -6,12 +6,3 @@
   --color-detail-blue:#0E73B6;
   --color-text-nav:#A8A9B4;
 }
-
-html{
-  font-family: Arial, Helvetica, sans-serif;
-}
-body{
-  min-height: 100vh;
-  display: flex;
-  color: #f7f7f7;
-}

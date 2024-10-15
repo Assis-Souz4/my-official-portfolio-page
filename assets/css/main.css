@@ -1,4 +1,48 @@
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+ height: 100vh;
+  /* display: flex; */
+  color: #f7f7f7;
+}
 main{
-  /* background-color: rgb(146, 141, 115);
-  height: 1000vh; */
+  margin-left: 300px;
+}
+.interface{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.edit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  scroll-snap-align: start;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.home{
+  height: 100vh;
+  background-image: url('../image/Sky.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about{
+  height: 100vh;
+  background-color: red;
+}
+.curriculum{
+  height: 100vh;
+  background-color: gold;
+}
+.portifolio{
+  height: 100vh;
+  background-color: lightskyblue;
+}
+.contact{
+  height: 100vh;
+  background-color: seagreen;
 }

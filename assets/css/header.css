@@ -3,7 +3,7 @@
   width: 300px;
   scroll-snap-type: both mandatory;
   overflow-y: auto;
-  position: sticky;
+  position: fixed;
   top: 0;
   background-color: var(--color-header-background);
 }
