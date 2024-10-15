@@ -1,62 +1,75 @@
-html {
-  font-family: Arial, Helvetica, sans-serif;
-}
-#header {
+.header_content {
+  height: 100vh;
+  width: 300px;
+  scroll-snap-type: both mandatory;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
   background-color: var(--color-header-background);
-  min-height: 100vh;
-  width: calc(100vw / 4);
-  padding: 50px 0 0 0;
 }
-.header__image{
+.header_container_image {
+  margin: 20px 0 10px 0;
+}
+.header_image {
+  border-radius: 50%;
   border: 8px solid var(--color-border-photo-header);
-  width: 10rem;
-  border-radius: 50%;
+  object-fit: cover;
+  width: 180px;
+  margin: 0 auto;
 }
-.header__name{
-  color: var(--color-header-font-primary);
-  font-size: 1.75rem;
+.header_titulo {
+  font-size: 1.563rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-bottom: 20px;
 }
-.header__lista{
+.header_redes {
   display: flex;
-  gap: 10px;
   justify-content: center;
-  margin-top: 0.5rem;
+  align-items: center;
+  gap: 12px;
 }
-.header__list__item{
-  font-size: 1.125rem;
+.header_redes li > a {
+  font-size: 20px;
+  border: 18px solid var(--color-border-photo-header);
+  border-radius: 50px;
   color: aliceblue;
-  display: inline-block;
-  border: 10px solid transparent;
-  border-radius: 50%;
-}
-.header__list__item:hover{
-  color: var(--color-border-photo-header);
-  border: 10px solid var(--color-border-photo-header);
   background-color: var(--color-border-photo-header);
-  color: aliceblue;
+  text-align: center;
+}
+.header_redes li > a:hover {
+  border: 18px solid var(--color-detail-blue);
+  border-radius: 50%;
   transition: 0.5s;
 }
-#nav{
-
-}
-.nav__list{
-  margin: 15% 0 10% 20%;
- display: flex;
- flex-direction: column;
- gap: 40px;
-}
-.nav__list > li{
+.header_menu_content {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px 0 40px 40px;
+}
+.header_menu_content a {
+  width: 100% !important;
+  padding: 10px 0;
+}
+.header_menu_content li {
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
-}
-.nav__list__ico{
   color: var(--color-text-nav);
 }
-.nav__list__ico + a{
-  color: var(--color-text-nav);
-  padding: 0.2rem;
+.header_menu_content i + a {
   font-size: 1rem;
+  color: var(--color-text-nav);
+}
+.header_menu_content li:hover{
+  color: var(--color-detail-blue);
+  transition: 0.5s;
+}
+.header_menu_content i + a:hover{
+  color: var(--color-header-font-primary);
+  transition: 0.5s;
+}
+.header_menu_content li > i{
+  font-size: 1.125em;
 }
