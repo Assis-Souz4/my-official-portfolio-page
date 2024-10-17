@@ -1,48 +1,100 @@
-html{
+html {
   font-family: Arial, Helvetica, sans-serif;
 }
-body{
- height: 100vh;
-  /* display: flex; */
-  color: #f7f7f7;
+body {
+  height: 100vh;
+  color: var(--color-text);
 }
-main{
+main {
   margin-left: 300px;
 }
-.interface{
+.interface {
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
-.edit{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  scroll-snap-align: start;
+.edit {
+  /* display: flex; */
   /* position: sticky;
   top: 0;
   left: 0; */
-}
-.home{
   height: 100vh;
-  background-image: url('../image/Sky.png');
+  scroll-snap-align: start;
+  margin: 0 40px;
+  padding-top: 30px;
+  max-width: 1440px;
+}
+.home {
+  height: 100vh;
+  background-image: url("../image/Sky.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.about{
+.about {
   height: 100vh;
-  background-color: red;
 }
-.curriculum{
+/* .about_list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, auto));
+  gap: 28px;
+  margin-bottom: 30px;
+  color: var( --color-text);
+} */
+
+.about_title {
+  font-size: var(--size-title);
+  color: var(--color-title);
+  font-weight: var(--bold-title);
+}
+.about_text{
+  margin-bottom: 30px;
+}
+.about_container{
+  display: grid;
+  grid-template-columns: minmax(280px, 350px) 1fr;
+  gap: 20px;
+  color: var( --color-text);
+}
+.about_subtitle{
+  font-size: var(--size-subtitle);
+  color: var(--color-text);
+  font-weight: var(--bold-title);
+  margin-bottom: 20px;
+}
+.about_list{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, auto));
+  gap: 40px;
+  margin: 40px 0;
+}
+.about_list > li{
+  color: var(--color-text);
+}
+.about_list li span{
+  color: var(--color-text);
+  font-weight: var(--bold-title);
+}
+.about_list li a{
+  color: var(--color-text);
+}
+.about_list i{
+  color: var(--color-text);
+  margin-right: 10px;
+  color: var( --color-detail-blue);
+}
+.skills {
+  height: 100vh;
+  background-color: rgb(205, 15, 234);
+}
+.curriculum {
   height: 100vh;
   background-color: gold;
 }
-.portifolio{
+.portifolio {
   height: 100vh;
   background-color: lightskyblue;
 }
-.contact{
+.contact {
   height: 100vh;
   background-color: seagreen;
 }

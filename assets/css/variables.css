@@ -3,6 +3,14 @@
   --color-header-background:#040B14;
   --color-border-photo-header:#292F37;
   --color-header-font-primary:#f7f7f7;
-  --color-detail-blue:#0E73B6;
+  --color-detail-blue:#149DDD;
   --color-text-nav:#A8A9B4;
+
+  /* fonts body*/
+  --color-title:#050D18;
+  --color-text:#272829;
+  --size-title: 2rem;
+  --size-subtitle: 1.5rem;
+  --size_texto: 1rem;
+  --bold-title: 700;
 }

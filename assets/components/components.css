@@ -1,0 +1,8 @@
+.detail_blue:after{
+  content: '';
+  height: 3.5px;
+  width: 30px;
+  display: block;
+  background-color: var(--color-detail-blue);
+  margin: 15px 0;
+}
