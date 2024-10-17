@@ -6,3 +6,14 @@
   background-color: var(--color-detail-blue);
   margin: 15px 0;
 }
+.title{
+  font-size: var(--size-title);
+  color: var(--color-title);
+  font-weight: var(--bold-title);
+}
+.subtitle{
+  font-size: var(--size-subtitle);
+  color: var(--color-text);
+  font-weight: var(--bold-title);
+  margin-bottom: 20px;
+}

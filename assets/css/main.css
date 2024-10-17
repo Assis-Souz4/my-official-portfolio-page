@@ -4,6 +4,7 @@ html {
 body {
   height: 100vh;
   color: var(--color-text);
+  background-color: var(--color-background-light);
 }
 main {
   margin-left: 300px;
@@ -29,72 +30,4 @@ main {
   background-image: url("../image/Sky.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.about {
-  height: 100vh;
-}
-/* .about_list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, auto));
-  gap: 28px;
-  margin-bottom: 30px;
-  color: var( --color-text);
-} */
-
-.about_title {
-  font-size: var(--size-title);
-  color: var(--color-title);
-  font-weight: var(--bold-title);
-}
-.about_text{
-  margin-bottom: 30px;
-}
-.about_container{
-  display: grid;
-  grid-template-columns: minmax(280px, 350px) 1fr;
-  gap: 20px;
-  color: var( --color-text);
-}
-.about_subtitle{
-  font-size: var(--size-subtitle);
-  color: var(--color-text);
-  font-weight: var(--bold-title);
-  margin-bottom: 20px;
-}
-.about_list{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, auto));
-  gap: 40px;
-  margin: 40px 0;
-}
-.about_list > li{
-  color: var(--color-text);
-}
-.about_list li span{
-  color: var(--color-text);
-  font-weight: var(--bold-title);
-}
-.about_list li a{
-  color: var(--color-text);
-}
-.about_list i{
-  color: var(--color-text);
-  margin-right: 10px;
-  color: var( --color-detail-blue);
-}
-.skills {
-  height: 100vh;
-  background-color: rgb(205, 15, 234);
-}
-.curriculum {
-  height: 100vh;
-  background-color: gold;
-}
-.portifolio {
-  height: 100vh;
-  background-color: lightskyblue;
-}
-.contact {
-  height: 100vh;
-  background-color: seagreen;
 }
