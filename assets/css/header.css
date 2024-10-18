@@ -32,14 +32,14 @@
 }
 .header_redes li > a {
   font-size: 20px;
-  border: 18px solid var(--color-border-photo-header);
-  border-radius: 50px;
+  border: 10px solid var(--color-border-photo-header);
+  border-radius: 50%;
   color: aliceblue;
   background-color: var(--color-border-photo-header);
   text-align: center;
 }
 .header_redes li > a:hover {
-  border: 18px solid var(--color-detail-blue);
+  border: 10px solid var(--color-detail-blue);
   border-radius: 50%;
   transition: 0.5s;
 }

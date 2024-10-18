@@ -1,0 +1,47 @@
+.photo_gallery{
+  display: grid;
+  /* grid-template-columns: repeat(3,minmax(200px, 300px)); */
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.portifolio_text{
+  margin-bottom: 50px;
+}
+.photo_gallery li > img{
+  object-fit: cover;
+  /* width: 300px;
+  height: 200px; */
+}
+.photo_gallery li > img{
+  position:relative;
+  display:inline-block;
+  /* margin:1rem 1rem; */
+  width:300px;
+  height:200px;
+  border-radius:1px;
+  /* background-color:#EEE; */
+  box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.photo_gallery li > img:after{
+  content:"";
+  position:absolute;
+  /* width:350px;
+  height:250px; */
+  opacity:0;
+  border-radius:5px;
+  box-shadow:0 5px 15px 0 rgba(0,0,0,0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: -1;
+}
+
+.photo_gallery li > img:hover{
+  transform:scale(1.1,1.1);
+}
+
+.photo_gallery li > img:hover::after{
+  opacity:1;
+}
